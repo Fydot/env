@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# vim
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle;
+ln -sf ./.vimrc $HOME/.vimrc;
+vim +BundleInstall +qall;
+
+# git
+ln -sf ./.gitconfig $HOME/.gitconfig;
+
+# zsh
+if [[ $OSTYPE == linux-gnu ]]; then
+  sudo apt-get install zsh;
+fi
+
+git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh;
+cp ./.zshrc $HOME/.zshrc;
+
+sudo gem install git_remote_branch
+
+source $HOME/.zshrc

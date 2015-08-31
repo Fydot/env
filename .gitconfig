@@ -1,0 +1,16 @@
+[pager]
+  diff =
+[alias]
+  st = status -sb
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[user]
+  email = ifidot@gmail.com
+  name = fydot
+[color]
+  ui = true
+[push]
+  default = matching
